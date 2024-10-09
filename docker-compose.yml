@@ -1,0 +1,18 @@
+version: "3"
+
+services:
+  aws:
+    container_name: aws
+    image: aws
+    build:
+      context: ./
+      dockerfile: Dockerfile
+    volumes:
+      - ./:/app
+    networks:
+      - aws_network
+    restart: always
+
+networks:
+  aws_network:
+    name: aws_network
