@@ -5,4 +5,5 @@ docker compose build
 docker compose up
 
 ## Enter in the container
-docker exec -it gitaws zsh
+docker exec -it gitaws bash
+
